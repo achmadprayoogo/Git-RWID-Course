@@ -1,0 +1,24 @@
+# MENGINISIASI GIT
+Jika folder baru dibuat perlu untuk menginisiasi git agar dapat diterapkan git pada folder tersebut 
+dengan perintah -> "git init"
+
+# MEMASUKKAN FILE PADA STAGE GIT
+perubahan pada file dapat disimpan sementara di stage dengan perintah 
+-> "git add ." (untuk semua file)
+-> "git add <file_name>" (untuk satu file tertentu)
+
+# MEMASUKKAN FILE DALAM GIT (COMMIT)
+-> "git commit -m "messege" (dalam tanda kutip harus diisi catatan perubahan)
+
+# MEMBATALKAN PERUPAHAN PADA FILE
+-> “git clean -f” (Jika kondisi file masih di untracked state)
+-> “git restore <file_name>” (Jika kondisi file berada di modified state)
+-> “git restore <file_name> --staged” (Jika kondisi file berada di staged state)
+Jika kondisi file berada di committed state, cara membatalkan perubahan file tersebut akan dibahas sendiri di revert commit.
+
+#MENLIHAT RIWAYAT PERUBAHAN DENGAN GIT LOG
+-> "git log" (untuk penjabaran lengkap)
+-> "git log --oneline" (untuk penjabaran singkat)
+-> "git log --graph" (untuk penjabaran dengan format lengkap yang lebih rapi)
+-> "git log --oneline --graph" (untuk penjabaran singkat dan rapi)
+-> "git show <seven_hash_commit>" (untuk penjabaran mengenai commit tertentu)
