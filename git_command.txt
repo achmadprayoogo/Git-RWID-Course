@@ -27,4 +27,9 @@ Jika kondisi file berada di committed state, cara membatalkan perubahan file ter
 -> "git diff <seven_hash_commit> <seven_hash_commit>" (Yang dibandingkan di sini hanyalah snapshot dari commit di hash pertama dengan hash kedua, bukan perubahan yang terjadi di semua commit yang berada di antara dua hash tersebut)
 
 # MERESET COMMIT 
--> "git reset --soft" (Posisi HEAD pointer berpindah dan melempar semua perubahan 	yang telah tercatat di commit tersebut menuju Staging Area)
+-> "git reset" (Mengeluarkan semua file dari stage ke unstage)
+-> "git reset <file_name>" (Mengeluarkan file tertentu dari stage ke unstage)
+-> "git reset <seven_hash_commit> --soft" (Posisi HEAD pointer berpindah dan melempar semua perubahan yang telah tercatat di commit tersebut menuju Staging Area)
+-> "git reset <seven_hash_commit> --mixed" (Posisi HEAD pointer berpindah dan melempar semua perubahan yang telah tercatat di commit tersebut menuju Working Directory (perlu “git add” lagi supaya bisa naik ke Staging Area))
+-> "git reset <seven_hash_commit> --hard" (Posisi HEAD pointer berpindah dan membuat Staging Area dan Working Directory menjadi dengan Git Repository (semua perubahan yang telah tercatat di commit tersebut menjadi hilang bahkan, perubahan file pada vscode juga hilang))
+
