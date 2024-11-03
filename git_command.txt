@@ -49,4 +49,3 @@ Jika kondisi file berada di committed state, cara membatalkan perubahan file ter
 
 # MEMBUAT ALIAS UNTUK MEMPERSINGKAT COMMAND
 -> "git config --global alias.<alias> <target_command>" (contoh : "git config --global alias.s status")
- 
