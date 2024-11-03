@@ -22,3 +22,9 @@ Jika kondisi file berada di committed state, cara membatalkan perubahan file ter
 -> "git log --graph" (untuk penjabaran dengan format lengkap yang lebih rapi)
 -> "git log --oneline --graph" (untuk penjabaran singkat dan rapi)
 -> "git show <seven_hash_commit>" (untuk penjabaran mengenai commit tertentu)
+
+# MEMBANDINGKAN COMMIT SATU DENGAN YANG LAIN
+-> "git diff <seven_hash_commit> <seven_hash_commit>" (Yang dibandingkan di sini hanyalah snapshot dari commit di hash pertama dengan hash kedua, bukan perubahan yang terjadi di semua commit yang berada di antara dua hash tersebut)
+
+# MERESET COMMIT 
+-> "git reset --soft" 
