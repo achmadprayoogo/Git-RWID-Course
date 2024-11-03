@@ -27,4 +27,4 @@ Jika kondisi file berada di committed state, cara membatalkan perubahan file ter
 -> "git diff <seven_hash_commit> <seven_hash_commit>" (Yang dibandingkan di sini hanyalah snapshot dari commit di hash pertama dengan hash kedua, bukan perubahan yang terjadi di semua commit yang berada di antara dua hash tersebut)
 
 # MERESET COMMIT 
--> "git reset --soft" 
+-> "git reset --soft" (Posisi HEAD pointer berpindah dan melempar semua perubahan 	yang telah tercatat di commit tersebut menuju Staging Area)
