@@ -33,5 +33,20 @@ Jika kondisi file berada di committed state, cara membatalkan perubahan file ter
 -> "git reset <seven_hash_commit> --mixed" (Posisi HEAD pointer berpindah dan melempar semua perubahan yang telah tercatat di commit tersebut menuju Working Directory (perlu “git add” lagi supaya bisa naik ke Staging Area))
 -> "git reset <seven_hash_commit> --hard" (Posisi HEAD pointer berpindah dan membuat Staging Area dan Working Directory menjadi dengan Git Repository (semua perubahan yang telah tercatat di commit tersebut menjadi hilang bahkan, perubahan file pada vscode juga hilang))
 
-# MENIMPA CONNIT TERAKHIR DENGAN COMMIT PERUBAHAN TERBARU TANPA MENGUBAH MESSEGE
+# MENIMPA COMMIT TERAKHIR DENGAN COMMIT PERUBAHAN TERBARU TANPA MENGUBAH MESSEGE
 -> "git commit --amend" (ini akan meribah hash dari commit sebelumnya)
+
+# MENGEMBALIKAN COMMIT PADA VERSI COMMIT SEBELUMNYA
+-> "git checkout <seven_hash_commit>" (untuk kembali pada versi commit tertentu untuk semua file di commit yang dimaksud)
+-> "git checkout <seven_hash_commit> -- <file_name>" (untuk kembali pada versi commit tertentu untuk semua 1 file di commit yang dimaksud)
+-> "git checkout <branch_name>" (untuk kembali ke versi terbaru)
+
+# MEMBATALKAN PERUBAHAN YANG TELAH DICOMMIT SEBELUMNYA DENGAN MEMBUAT COMIT BARU
+-> "git revert <seven_hash_commit>" (ini akan membuat commit baru yang membatalkan commit sebelumya)
+
+# MELIHAT SIAPA SAJA YANG MENGEDIT SUATU FILE
+-> "git blame <file_name>" (menampilkan author pada tiap baris file yang disebut)
+
+# MEMBUAT ALIAS UNTUK MEMPERSINGKAT COMMAND
+-> "git config --global alias.<alias> <target_command>" (contoh : "git config --global alias.s status")
+ 
